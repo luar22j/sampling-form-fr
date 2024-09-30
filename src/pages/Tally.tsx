@@ -47,7 +47,7 @@ const Tally = () => {
       <div className="flex flex-col">
         <div className="mx-3 md:mx-[20%]">
           {!isLoaded && (
-            <div className="flex justify-center items-center h-[500px]">
+            <div className="flex justify-center items-center h-[600px]">
               <BeatLoader color="#FE3D99" />
             </div>
           )}
