@@ -16,7 +16,7 @@ const Video = () => {
         </div>
       )}
       <video
-        src="../../public/video/Alex.mp4"
+        src="/video/Alex.mp4"
         autoPlay
         loop
         muted
