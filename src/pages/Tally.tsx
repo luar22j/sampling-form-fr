@@ -5,6 +5,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 const Tally = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false); // Nueva variable de estado
 
   return (
     <div className="global-animation">
@@ -25,13 +26,19 @@ const Tally = () => {
             />
           </svg>
         </div>
-        <p>Voler</p>
+        <p>Volver</p>
       </Link>
       <div className="bg-white py-4 flex items-center justify-center -mt-8">
+        {!isImageLoaded && !isLoaded && (
+          <div className="flex justify-center items-center h-[150px] w-[150px]">
+            <BeatLoader color="#FE3D99" />
+          </div>
+        )}
         <img
           src="https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png"
           className="w-[150px]"
           alt="Tous"
+          onLoad={() => setIsImageLoaded(true)}
         />
       </div>
       <h1 className="title text-[#FE3D99] uppercase text-2xl mx-5 text-center">
