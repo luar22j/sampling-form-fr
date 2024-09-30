@@ -20,7 +20,7 @@ const Home = () => {
     <div className="global-animation flex flex-col w-screen">
       <Link
         to="/"
-        className={`bg-white py-4 items-center justify-center w-screen flex fixed lg:relative z-50 ${
+        className={`bg-white py-4 items-center justify-center w-screen flex fixed lg:relative z-40 ${
           isScrolled
             ? "shadow-md sm:shadow-none"
             : "transition-all duration-300"
