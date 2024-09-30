@@ -1,16 +1,42 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Form from "./pages/Tally";
 import Home from "./pages/Home";
-import Info from "./components/home/Info";
+import ThanksModal from "./components/home/ThanksModal";
+import { useEffect, useState } from "react";
 
-export default function App() {
+function App() {
+  const location = useLocation();
+  const [showThanksModal, setShowThanksModal] = useState(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    if (params.get("success") === "1") {
+      setShowThanksModal(true);
+    } else {
+      setShowThanksModal(false);
+    }
+  }, [location]);
+
   return (
-    <Router>
+    <>
+      {showThanksModal && <ThanksModal />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />} />
-        <Route path="/info" element={<Info />} />
       </Routes>
+    </>
+  );
+}
+
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
     </Router>
   );
 }

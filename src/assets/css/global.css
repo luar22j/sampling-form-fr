@@ -40,6 +40,6 @@ label {
 }
 
 .active-button:active {
-  transform: scale(0.9);
+  transform: scale(0.9, 0.9);
   transition: all 300ms;
 }
