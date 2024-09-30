@@ -46,11 +46,6 @@ const Tally = () => {
       </h1>
       <div className="flex flex-col">
         <div className="mx-3 md:mx-[20%]">
-          {!isLoaded && (
-            <div className="flex justify-center items-center h-[600px]">
-              <BeatLoader color="#FE3D99" />
-            </div>
-          )}
           <iframe
             src="https://tally.so/embed/31JW2l?alignCenter=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
