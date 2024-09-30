@@ -19,9 +19,9 @@ const Video = () => {
         src="/video/Alex.mp4"
         autoPlay
         loop
-        muted
         playsInline
-        className={`w-full mt-[80px] object-cover border-b-2 transition-opacity duration-500 ${
+        controls
+        className={`w-full sm:w-auto sm:h-[400px] md:h-[500px] lg:h-[600px] sm:rounded-tr-lg sm:rounded-br-lg mt-[80px] lg:mt-0 object-cover border-b-2 transition-opacity duration-500 ${
           loading ? "opacity-0" : "opacity-100"
         }`}
         onLoadedData={handleLoadedData}
