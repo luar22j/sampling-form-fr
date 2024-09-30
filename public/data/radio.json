@@ -1,0 +1,19 @@
+{
+  "options": {
+    "option1": {
+      "option": "opcio1",
+      "label": "Excel·lent",
+      "value": "opcion1"
+    },
+    "option2": {
+      "option": "opcio2",
+      "label": "Correcte",
+      "value": "opcion2"
+    },
+    "option3": {
+      "option": "opcio3",
+      "label": "Millorable",
+      "value": "opcion3"
+    }
+  }
+}
