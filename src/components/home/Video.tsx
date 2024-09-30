@@ -21,7 +21,7 @@ const Video = () => {
         loop
         muted
         playsInline
-        className={`w-full mt-[40px] object-cover border-b-2 transition-opacity duration-500 ${
+        className={`w-full mt-[80px] object-cover border-b-2 transition-opacity duration-500 ${
           loading ? "opacity-0" : "opacity-100"
         }`}
         onLoadedData={handleLoadedData}
