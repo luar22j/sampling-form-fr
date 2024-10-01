@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
-    <section className="flex flex-col gap-5 my-5">
+    <section className="flex flex-col gap-5 my-5 lg:mt-[100px]">
       <article className="flex flex-col gap-5 mx-5 justify-center lg:items-center sm:mx-[100px] lg:mx-[150px]">
         <h1 className="title text-2xl lg:text-3xl text-[#FE3D99] uppercase">
           Todo sobre Eau de parfum TOUS Electro Touch, de Fabrice Pellegrin.
