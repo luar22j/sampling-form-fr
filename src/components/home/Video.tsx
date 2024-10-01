@@ -21,7 +21,7 @@ const Video = () => {
         loop
         playsInline
         controls
-        className={`w-full sm:w-auto sm:h-[400px] md:h-[500px] lg:h-[600px] sm:rounded-tr-lg sm:rounded-br-lg mt-[80px] lg:mt-0 object-cover border-b-2 transition-opacity duration-500 ${
+        className={`w-full sm:w-auto sm:h-[400px] md:h-[500px] lg:h-[600px] lg:rounded-tr-lg lg:rounded-br-lg mt-[80px] lg:mt-0 object-cover sm:object-contain transition-opacity duration-500 ${
           loading ? "opacity-0" : "opacity-100"
         }`}
         onLoadedData={handleLoadedData}
