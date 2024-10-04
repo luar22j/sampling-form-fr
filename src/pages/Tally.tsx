@@ -50,7 +50,7 @@ const Tally = () => {
             src="https://tally.so/embed/31JW2l?alignCenter=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height="700"
+            height="750"
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}
