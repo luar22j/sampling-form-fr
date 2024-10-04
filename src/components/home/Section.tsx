@@ -13,9 +13,9 @@ const Section = () => {
           energía que desprende.
         </p>
         <ul className="list-disc list-inside pl-1 space-y-1">
-          <li>Una chispante fusión de pera, pomelo y arándano.</li>
+          <li>Una chispeante fusión de pera, pomelo y arándano.</li>
           <li>
-            Corazón floral a base de jazmón y azahar con un toque de chantilly.
+            Corazón floral a base de jazmín y azahar con un toque de chantilly.
           </li>
           <li>
             Notas amaderadas de sándalo y del acorde Dreamwood se entremezclan

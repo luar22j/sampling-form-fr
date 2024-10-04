@@ -31,7 +31,7 @@ const Tally = () => {
       <div className="bg-white py-4 flex items-center justify-center -mt-8">
         {!isImageLoaded && !isLoaded && (
           <div className="flex justify-center items-center h-[150px] w-[150px]">
-            <BeatLoader color="#FE3D99" />
+            <BeatLoader color="#FE3D99" speedMultiplier={0.5} />
           </div>
         )}
         <img

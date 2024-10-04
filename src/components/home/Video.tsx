@@ -12,7 +12,7 @@ const Video = () => {
     <>
       {loading && (
         <div className="w-full h-[400px] mt-[80px] flex justify-center items-center">
-          <PulseLoader color="#FE3D99" />
+          <PulseLoader color="#FE3D99" speedMultiplier={0.5} />
         </div>
       )}
       <video
@@ -21,6 +21,7 @@ const Video = () => {
         loop
         playsInline
         controls
+        muted
         className={`w-full sm:w-auto sm:h-[400px] md:h-[500px] lg:h-[600px] lg:rounded-tr-lg lg:rounded-br-lg mt-[80px] lg:mt-[100px] object-cover sm:object-contain transition-opacity duration-500 ${
           loading ? "opacity-0" : "opacity-100"
         }`}
