@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "../assets/css/global.css";
 
 const Tally = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
   return (
     <div className="global-animation">
       <Link to="/" className="active-button py-2 flex items-center gap-1 m-5">
@@ -44,9 +41,6 @@ const Tally = () => {
             marginWidth={0}
             title="Formulario de valoración"
             allowFullScreen
-            onLoad={() => {
-              setIsLoaded(true);
-            }}
           ></iframe>
         </div>
       </div>
