@@ -12,7 +12,7 @@ const Fillout = () => {
           alt="Tous"
         />
       </Link>
-      <h1 className="title text-[#FE3D99] uppercase text-2xl mx-5 text-center">
+      <h1 className="title text-[#F04D79] uppercase text-2xl mx-5 text-center">
         FORMULARIO DE VALORACIÓN de eau parfum tous electro touch
       </h1>
       <div className="w-full h-[400px] my-3">

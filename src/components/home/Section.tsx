@@ -4,23 +4,23 @@ const Section = () => {
   return (
     <section className="flex flex-col gap-5 my-5 lg:mt-[100px]">
       <article className="flex flex-col gap-5 mx-5 justify-center lg:items-center sm:mx-[100px] lg:mx-[150px]">
-        <h1 className="title text-2xl lg:text-3xl text-[#FE3D99] uppercase">
-          Todo sobre Eau de parfum TOUS Electro Touch, de Fabrice Pellegrin.
+        <h1 className="title text-2xl lg:text-3xl text-[#F04D79]">
+          Descubre el nuevo Body Milk de Sampling Innovations.
         </h1>
         <p>
-          Esta fragancia vegana, ambarada y floral, acompaña la fuerza innata y
-          la alegría de una mujer que se sabe el centro de atención por la
-          energía que desprende.
+          La innovadora loción corporal que penetra profundamente en la
+          superficie de la piel:
         </p>
-        <ul className="list-disc list-inside pl-1 space-y-1">
-          <li>Una chispeante fusión de pera, pomelo y arándano.</li>
+        <ul className="list-inside pl-1 space-y-5">
           <li>
-            Corazón floral a base de jazmín y azahar con un toque de chantilly.
+            💧 Aporta hasta 48h de hidratación gracias a su textura fresca y
+            ligera, a la vez que nutre e ilumina la piel.
           </li>
           <li>
-            Notas amaderadas de sándalo y del acorde Dreamwood se entremezclan
-            con la vainilla y el praliné creando un magnetismo irresistible.
+            🍊 Formulado con Vitamina C, el ingrediente antioxidante más
+            potente.
           </li>
+          <li>🌱 Producto vegano y con 98% de ingredientes naturales.</li>
         </ul>
         <p>
           Disfruta del abrazo afrutado con este perfume TOUS Electro Touch con
@@ -29,19 +29,19 @@ const Section = () => {
       </article>
 
       <article className="flex flex-col gap-5 mx-5 justify-center lg:items-center sm:mx-[100px] lg:mx-[150px]">
-        <h2 className="title text-2xl lg:text-3xl text-[#FE3D99]">
-          ¡CONSIGUE UN 20% DE DESCUENTO PARA TOUS ONLINE CON TU OPINIÓN!
+        <h2 className="title text-2xl lg:text-3xl text-[#F04D79]">
+          ¡Gana un lote de productos gratis!
         </h2>
         <p>
-          Tu opinión es muy importante para nosotros. Por eso, si respondes este
-          breve formulario podrás obtener un descuento del 20% en cualquier
-          producto de TOUS.
+          Responde a un breve formulario sobre tu experiencia con el producto
+          para entrar en el sorteo de un lote de productos de Sampling
+          Innovations.
         </p>
         <Link
-          className="active-button w-full sm:w-auto bg-[#FE3D99] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
+          className="title-bold active-button w-full sm:w-auto bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
           to="/form"
         >
-          Quiero mi recompensa
+          Quiero participar
         </Link>
       </article>
     </section>

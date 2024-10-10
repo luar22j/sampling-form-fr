@@ -27,23 +27,18 @@ const ThanksModal = () => {
           </Link>
         </div>
         <div className="flex flex-col items-center gap-5 -mt-10">
-          <img
-            src="https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png"
-            className="w-[100px]"
-            alt="Tous"
-          />
-          <h1 className="title text-[#FE3D99] uppercase text-2xl mx-5 text-center">
-            ¡Gracias por tu respuesta!
+          <img src="/img/logo-sampling.png" className="w-[100px]" alt="logo" />
+          <h1 className="title-bold uppercase text-lg text-center">
+            ¡Ya estás dentro del sorteo!
           </h1>
           <p className="text-sm">
-            Te hemos enviado tu código de descuento por correo. ¡Explora todos
-            los productos de TOUS y utiliza tu recompensa en el que más te
-            guste!
+            El 1 de diciembre nos pondremos en contacto con el ganador a través
+            de su correo electrónico. ¡Mucha suerte!
           </p>
           <a
             href="https://www.tous.com/"
             target="_blank"
-            className="active-button w-full bg-[#FE3D99] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
+            className="active-button w-full bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
           >
             Empezar a explorar
           </a>

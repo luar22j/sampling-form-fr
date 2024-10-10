@@ -1,12 +1,17 @@
 @font-face {
-  font-family: "Redgar";
-  src: url("../fonts/Redgar/Redgar.ttf") format("truetype");
+  font-family: "Futura";
+  src: url("../fonts/Futura/Futura-Medium-01.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 .title {
-  font-family: "Redgar";
+  font-family: "Futura";
+}
+
+.title-bold {
+  font-family: "Futura";
+  font-weight: 700;
 }
 
 input[type="radio"] {
@@ -20,7 +25,7 @@ label {
 
 .email-input::placeholder,
 .number-input::placeholder {
-  color: #fe3d99;
+  color: #f04d79;
 }
 .global-animation {
   animation: opacity-animation 500ms ease-in-out;

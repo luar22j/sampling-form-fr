@@ -12,11 +12,11 @@ const Video = () => {
     <>
       {loading && (
         <div className="w-full h-[400px] mt-[80px] flex justify-center items-center">
-          <PulseLoader color="#FE3D99" speedMultiplier={0.5} />
+          <PulseLoader color="#F04D79" speedMultiplier={0.5} />
         </div>
       )}
       <video
-        src="/video/Alex.mp4"
+        src="/video/video.mp4"
         autoPlay
         loop
         playsInline

@@ -44,7 +44,7 @@ const Info = () => {
                 className="w-[100px]"
                 alt="Tous"
               />
-              <h1 className="title text-[#FE3D99] uppercase text-2xl mx-5 text-center">
+              <h1 className="title text-[#F04D79] uppercase text-2xl mx-5 text-center">
                 Solo te falta un último paso para poder conseguir el descuento
               </h1>
               <div className="w-full flex flex-col gap-2">
@@ -53,21 +53,21 @@ const Info = () => {
                   name="name"
                   id="name"
                   placeholder="Nombre"
-                  className="email-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#FE3D99] transition-all"
+                  className="email-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#F04D79] transition-all"
                 />
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Correo electrónico"
-                  className="email-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#FE3D99] transition-all"
+                  className="email-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#F04D79] transition-all"
                 />
                 <input
                   type="number"
                   name="number"
                   id="number"
                   placeholder="Código postal"
-                  className="number-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#FE3D99] transition-all"
+                  className="number-input w-full h-[37px] p-3 bg-[#fe3d9a11] rounded-md outline-none focus:ring-2 focus:ring-[#F04D79] transition-all"
                   style={{
                     appearance: "textfield",
                   }}
@@ -75,7 +75,7 @@ const Info = () => {
               </div>
               <button
                 onClick={handleShowModal}
-                className="active-button w-full bg-[#FE3D99] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
+                className="active-button w-full bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
               >
                 Conseguir mi descuento
               </button>

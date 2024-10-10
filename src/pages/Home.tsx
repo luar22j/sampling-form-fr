@@ -24,11 +24,7 @@ const Home = () => {
           isScrolled ? "shadow-md" : "transition-all duration-300"
         }`}
       >
-        <img
-          src="https://static.tous.com/21202/pub/directus/7f19acb0-66c5-4e91-90c7-1ad9b723d323.png"
-          className="w-[150px]"
-          alt=""
-        />
+        <img src="/img/logo-sampling.png" className="w-[150px]" alt="logo" />
       </Link>
       <div className="flex flex-col lg:flex-row">
         <Video />
