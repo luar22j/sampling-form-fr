@@ -36,7 +36,7 @@ const ThanksModal = () => {
             de su correo electrónico. ¡Mucha suerte!
           </p>
           <a
-            href="https://www.tous.com/"
+            href="https://sampling-innovations.com/"
             target="_blank"
             className="active-button w-full bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
           >
