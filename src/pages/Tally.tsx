@@ -1,11 +1,47 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../assets/css/global.css";
 import BeatLoader from "react-spinners/BeatLoader";
 
 const Tally = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isImageLoaded, setIsImageLoaded] = useState(false); // Nueva variable de estado
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [currentHash, setCurrentHash] = useState("");
+
+  useEffect(() => {
+    const iframe = document.getElementById(
+      "tally-iframe"
+    ) as HTMLIFrameElement | null;
+
+    if (!iframe) {
+      console.error("No se pudo encontrar el iframe.");
+      return;
+    }
+
+    const checkHashChange = () => {
+      const newHash = iframe.contentWindow?.location.hash;
+      if (newHash && newHash !== currentHash) {
+        setCurrentHash(newHash);
+        applyTransition();
+      }
+    };
+
+    const applyTransition = () => {
+      const container = document.getElementById("form-container");
+      if (container) {
+        container.classList.add("fade-out");
+
+        setTimeout(() => {
+          container.classList.remove("fade-out");
+          container.classList.add("fade-in");
+        }, 500);
+      }
+    };
+
+    const intervalId = setInterval(checkHashChange, 100);
+
+    return () => clearInterval(intervalId);
+  }, [currentHash]);
 
   return (
     <div className="global-animation">
@@ -28,6 +64,7 @@ const Tally = () => {
         </div>
         <p>Volver</p>
       </Link>
+
       <div className="bg-white py-4 flex items-center justify-center -mt-8">
         {!isImageLoaded && !isLoaded && (
           <div className="flex justify-center items-center h-[150px] w-[150px]">
@@ -41,16 +78,19 @@ const Tally = () => {
           onLoad={() => setIsImageLoaded(true)}
         />
       </div>
+
       <h1 className="title text-[#FE3D99] uppercase text-2xl mx-5 text-center">
         FORMULARIO DE VALORACIÓN de eau parfum tous electro touch
       </h1>
+
       <div className="flex flex-col">
-        <div className="mx-3 md:mx-[20%]">
+        <div id="form-container" className="mx-3 md:mx-[20%] form-animation">
           <iframe
+            id="tally-iframe"
             src="https://tally.so/embed/31JW2l?alignCenter=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
             loading="lazy"
             width="100%"
-            height="800"
+            height="400"
             frameBorder={0}
             marginHeight={0}
             marginWidth={0}

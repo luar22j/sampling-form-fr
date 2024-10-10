@@ -20,6 +20,8 @@ function App() {
     } else {
       setShowThanksModal(false);
     }
+
+    window.scrollTo(0, 0);
   }, [location]);
 
   return (

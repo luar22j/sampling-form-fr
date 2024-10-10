@@ -26,6 +26,10 @@ label {
   animation: opacity-animation 500ms ease-in-out;
 }
 
+.form-animation {
+  animation: opacity-animation 1s ease-in-out;
+}
+
 .email-animation {
   animation: opacity-animation 500ms ease-in-out;
 }
