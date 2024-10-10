@@ -27,7 +27,7 @@ const ThanksModal = () => {
           </Link>
         </div>
         <div className="flex flex-col items-center gap-5 -mt-10">
-          <img src="/img/logo-sampling.png" className="w-[100px]" alt="logo" />
+          <img src="/img/sampling-logo.png" className="w-[100px]" alt="logo" />
           <h1 className="title-bold uppercase text-lg text-center">
             ¡Ya estás dentro del sorteo!
           </h1>

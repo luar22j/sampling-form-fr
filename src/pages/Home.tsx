@@ -24,7 +24,7 @@ const Home = () => {
           isScrolled ? "shadow-md" : "transition-all duration-300"
         }`}
       >
-        <img src="/img/logo-sampling.png" className="w-[150px]" alt="logo" />
+        <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
       </Link>
       <div className="flex flex-col lg:flex-row">
         <Video />

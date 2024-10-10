@@ -25,7 +25,7 @@ const Tally = () => {
       </Link>
 
       <div className="bg-white py-4 flex items-center justify-center -mt-8">
-        <img src="/img/logo-sampling.png" className="w-[150px]" alt="logo" />
+        <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
       </div>
 
       <div className="flex flex-col">
