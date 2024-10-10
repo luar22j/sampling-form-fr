@@ -31,7 +31,7 @@ const ThanksModal = () => {
           <h1 className="title-bold uppercase text-lg text-center">
             ¡Ya estás dentro del sorteo!
           </h1>
-          <p className="text-sm">
+          <p className="text-sm text-center">
             El 1 de diciembre nos pondremos en contacto con el ganador a través
             de su correo electrónico. ¡Mucha suerte!
           </p>
