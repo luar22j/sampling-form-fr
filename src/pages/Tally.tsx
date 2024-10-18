@@ -4,28 +4,28 @@ import "../assets/css/global.css";
 const Tally = () => {
   return (
     <div className="global-animation">
-      <Link to="/" className="active-button py-2 flex items-center gap-1 m-5">
-        <div>
+      <div className="bg-white py-4 flex items-center justify-center -mt-8">
+        <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
+      </div>
+
+      <div className="flex items-center">
+        <Link to="/" className="active-button flex items-center gap-1 m-5 mt-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            stroke="currentColor"
+            stroke="black"
             className="size-5"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
             />
           </svg>
-        </div>
-        <p>Volver</p>
-      </Link>
-
-      <div className="bg-white py-4 flex items-center justify-center -mt-8">
-        <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
+          <p>Volver</p>
+        </Link>
       </div>
 
       <div className="flex flex-col">
