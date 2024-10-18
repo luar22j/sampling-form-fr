@@ -8,6 +8,7 @@ import Form from "./pages/Tally";
 import Home from "./pages/Home";
 import ThanksModal from "./components/home/ThanksModal";
 import { useEffect, useState } from "react";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
