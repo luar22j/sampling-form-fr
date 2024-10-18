@@ -11,7 +11,7 @@ const Video = () => {
   return (
     <>
       {loading && (
-        <div className="w-full h-[400px] mt-[80px] flex justify-center items-center">
+        <div className="w-full h-[400px] lg:w-[450px] mt-[80px] flex justify-center items-center">
           <PulseLoader color="#F04D79" speedMultiplier={0.5} />
         </div>
       )}
