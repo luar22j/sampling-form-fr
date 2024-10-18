@@ -23,7 +23,7 @@ const Video = () => {
         controls
         muted
         className={`w-full sm:w-auto sm:h-[400px] md:h-[500px] lg:h-[600px] lg:rounded-tr-lg lg:rounded-br-lg mt-[80px] lg:mt-[100px] object-cover sm:object-contain transition-opacity duration-500 ${
-          loading ? "opacity-0" : "opacity-100"
+          loading ? "hidden opacity-0" : "opacity-100"
         }`}
         onLoadedData={handleLoadedData}
       ></video>
