@@ -16,7 +16,7 @@ const Video = () => {
         </div>
       )}
       <video
-        src="/video/video.mp4"
+        src="/video/Sampling_BodyMilk_Avatar.mp4"
         autoPlay
         loop
         playsInline
