@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import ThanksModal from "./components/home/ThanksModal";
 import { useEffect, useState } from "react";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ export default function AppWrapper() {
   return (
     <Router>
       <App />
+      <Analytics />
     </Router>
   );
 }
