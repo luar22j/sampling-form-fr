@@ -20,7 +20,7 @@ const NotFound = () => {
         <p className="title text-lg">{t("common.notFound.description")}</p>
 
         <a
-          href="https://sampling-innovations.com/"
+          href="https://goil-sampling-form.vercel.app/"
           className="active-button text-white bg-[#F04D79] px-4 py-2 rounded-md mt-5"
         >
           {t("common.notFound.cta")}
