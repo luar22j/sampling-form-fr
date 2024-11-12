@@ -1,8 +1,8 @@
 import Section from "../components/home/Section";
 import "../assets/css/global.css";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Video from "../components/home/Video";
+import LanguageSelector from "../components/LanguageSelector";
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -18,14 +18,16 @@ const Home = () => {
 
   return (
     <div className="global-animation flex flex-col w-screen">
-      <Link
-        to="/"
+      <div
         className={`bg-white py-4 items-center justify-center w-screen flex fixed z-40 ${
           isScrolled ? "shadow-md" : "transition-all duration-300"
         }`}
       >
         <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
-      </Link>
+        <div className="absolute right-10">
+          <LanguageSelector />
+        </div>
+      </div>
       <div className="flex flex-col lg:flex-row">
         <Video />
         <Section />
