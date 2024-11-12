@@ -6,10 +6,10 @@ const NotFound = () => {
   const currentLang = i18n.language;
 
   return (
-    <div className="global-animation flex flex-col w-screen">
+    <div className="global-animation flex flex-col w-full">
       <Link
         to={`/${currentLang}`}
-        className="bg-white py-4 items-center justify-center w-screen flex fixed z-4"
+        className="bg-white py-4 items-center justify-center w-full flex fixed z-4"
       >
         <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
       </Link>
