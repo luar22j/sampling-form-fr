@@ -19,12 +19,12 @@ const Home = () => {
   return (
     <div className="global-animation flex flex-col w-screen">
       <div
-        className={`bg-white py-4 items-center justify-center w-screen flex fixed z-40 ${
+        className={`bg-white py-4 px-5 items-center md:justify-center justify-between w-screen flex fixed z-40 ${
           isScrolled ? "shadow-md" : "transition-all duration-300"
         }`}
       >
         <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
-        <div className="absolute right-10">
+        <div className="md:absolute md:right-10 flex items-center">
           <LanguageSelector />
         </div>
       </div>
