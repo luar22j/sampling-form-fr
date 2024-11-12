@@ -20,9 +20,11 @@ const Tally = () => {
 
   return (
     <div className="global-animation">
-      <div className={`bg-white py-4 flex items-center justify-center mt-3`}>
+      <div
+        className={`bg-white py-4 px-5 flex items-center md:justify-center justify-between mt-3`}
+      >
         <img src="/img/sampling-logo.png" className="w-[150px]" alt="logo" />
-        <div className="absolute right-10">
+        <div className="md:absolute md:right-10">
           <LanguageSelector />
         </div>
       </div>
