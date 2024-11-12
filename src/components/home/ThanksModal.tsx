@@ -40,7 +40,7 @@ const ThanksModal = () => {
           <a
             href="https://sampling-innovations.com/"
             target="_blank"
-            className="active-button w-full bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-10 transition-shadow"
+            className="active-button w-full bg-[#F04D79] rounded-md flex items-center shadow hover:shadow-md justify-center text-white font-semibold uppercase py-3 px-6 transition-shadow"
           >
             {t("thanks.cta")}
           </a>
