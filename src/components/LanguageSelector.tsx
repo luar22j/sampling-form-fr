@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +7,7 @@ const LanguageSelector = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages = {
     es: "ES",
@@ -32,8 +33,30 @@ const LanguageSelector = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={dropdownRef}>
+      <div className="hidden">
+        {Object.keys(languages).map((code) => (
+          <img key={`preload-${code}`} src={`/img/${code}.jpg`} alt="" />
+        ))}
+      </div>
+
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center justify-between gap-2 px-3 py-1 border rounded-md"
