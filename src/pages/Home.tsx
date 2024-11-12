@@ -17,9 +17,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="global-animation flex flex-col w-full">
+    <div className="global-animation flex flex-col w-screen">
       <div
-        className={`bg-white py-4 px-5 items-center md:justify-center justify-between w-full flex fixed z-40 ${
+        className={`bg-white py-4 px-5 items-center md:justify-center justify-between w-screen flex fixed z-40 ${
           isScrolled ? "shadow-md" : "transition-all duration-300"
         }`}
       >
